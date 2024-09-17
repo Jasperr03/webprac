@@ -25,7 +25,7 @@ require_once 'connection.php';
             </button>
             <div class="navbar-collapse collapse hide" id="">
                 <div class="navbar-collapse flex-grow-1 text-right" style="padding-left: 20px">
-                    
+                    <?php include 'nav/nav_main.php' ?>
                 </div>
             </div>
         </div>
