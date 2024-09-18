@@ -36,7 +36,9 @@ require_once 'connection.php';
     <div>
         <div>
             <main>
-               
+            <i class="bi bi-recycle"></i>
+            <i class="bi bi-recycle"></i>
+            <i class="bi bi-recycle"></i>
             </main>
         </div>
     </div>
