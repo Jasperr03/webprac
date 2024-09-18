@@ -16,7 +16,7 @@ require_once 'connection.php';
 
 <body class="sb-nav-fixed">
     <!-- ========== Navigation ========== -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary px-2">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/webpracLogo.png" alt="webpracLogo" style="height: 0.3in;">
@@ -40,7 +40,25 @@ require_once 'connection.php';
                     <!--Load Main Data Here-->
                     <div class="row">
                         <div class="col-12" style="text-align: -webkit-center;">
-                            <img src="assets/img/webpracLogo.png" style="height: 1.5in; margin-top: 100px; font-family: fantasy;color: #002d54 !important;">
+                            <div class="card mb-3 border-0" style="max-width: 550px; margin-top: 100px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/webpracLogo.png" class="img-fluid rounded-start" alt="webpracLogo.png">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Welcome to WebPrac!</h5>
+                                            <p class="card-text " style="text-align: justify;">Welcome to WebPrac (Web Practice) — your go-to platform for mastering the art of web development!
+                                                 At WebPrac, we focus on providing hands-on experience in building dynamic websites using core web technologies 
+                                                 like CRUD operations, PHP, JavaScript, and jQuery. Whether you’re just starting out or looking to sharpen your 
+                                                 development skills, WebPrac offers practical tutorials, code examples, and projects to help you create fully 
+                                                 functional, data-driven websites. Join us and start practicing the essentials of modern web development today!
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">By Jasper Ellevera</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
