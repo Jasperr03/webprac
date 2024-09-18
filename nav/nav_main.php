@@ -6,13 +6,13 @@
         <div class="dropdown-menu dropdown-menu-end shadow-sm">
             <div class="d-md-flex align-items-start justify-content-start">
                 <div>
-                    <div class="dropdown-header py-0">Panel1</div>
-                    <a class="dropdown-item py-0">Sample1</a>
-                    <a class="dropdown-item py-0">Sample2</a>
+                    <div class="dropdown-header py-0">Student</div>
+                    <a class="dropdown-item py-0" onclick="clickSubModule('')">Student Profile</a>
+                    <a class="dropdown-item py-0" onclick="clickSubModule('')">Sample2</a>
                 </div>
                 <div>
-                    <div class="dropdown-header py-0">Panel2</div>
-                    <a class="dropdown-item py-0">Sample3</a>
+                    <div class="dropdown-header py-0">Settings</div>
+                    <a class="dropdown-item py-0">Student Registry</a>
                     <a class="dropdown-item py-0">Sample4</a>
                 </div>
             </div>

@@ -8,6 +8,7 @@ require_once 'connection.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta>
     <title>WebPractice</title>
     <link href="assets/img/webpracLogo.png" rel="icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,7 +17,7 @@ require_once 'connection.php';
 
 <body class="sb-nav-fixed">
     <!-- ========== Navigation ========== -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark px-2">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/webpracLogo.png" alt="webpracLogo" style="height: 0.3in;">
