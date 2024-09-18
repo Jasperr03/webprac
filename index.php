@@ -20,10 +20,10 @@ require_once 'connection.php';
                 <img src="assets/img/webpracLogo.png" alt="webpracLogo" style="height: 0.3in;">
                 WebPrac
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="true">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="true">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="navbar-collapse collapse hide" id="">
+            <div class="navbar-collapse collapse hide" id="main_nav">
                 <div class="navbar-collapse flex-grow-1 text-right" style="padding-left: 20px">
                     <?php include 'nav/nav_main.php' ?>
                 </div>
