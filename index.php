@@ -16,7 +16,7 @@ require_once 'connection.php';
 
 <body class="sb-nav-fixed">
     <!-- ========== Navigation ========== -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-2">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary px-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/webpracLogo.png" alt="webpracLogo" style="height: 0.3in;">
@@ -36,9 +36,14 @@ require_once 'connection.php';
     <div>
         <div>
             <main>
-            <i class="bi bi-recycle"></i>
-            <i class="bi bi-recycle"></i>
-            <i class="bi bi-recycle"></i>
+                <div id="maincontent" class="container-fluid px-2">
+                    <!--Load Main Data Here-->
+                    <div class="row">
+                        <div class="col-12" style="text-align: -webkit-center;">
+                            <img src="assets/img/webpracLogo.png" style="height: 1.5in; margin-top: 100px; font-family: fantasy;color: #002d54 !important;">
+                        </div>
+                    </div>
+                </div>
             </main>
         </div>
     </div>
