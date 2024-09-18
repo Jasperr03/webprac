@@ -11,9 +11,11 @@ require_once 'connection.php';
     <title>WebPractice</title>
     <link href="assets/img/webpracLogo.png" rel="icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap-icons-1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body class="sb-nav-fixed">
+    <!-- ========== Navigation ========== -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary px-2">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -30,6 +32,14 @@ require_once 'connection.php';
             </div>
         </div>
     </nav>
+    <!-- ========== Main Content ========== -->
+    <div>
+        <div>
+            <main>
+               
+            </main>
+        </div>
+    </div>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
