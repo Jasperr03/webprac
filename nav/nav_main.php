@@ -7,15 +7,23 @@
             <div class="d-md-flex align-items-start justify-content-start">
                 <div>
                     <div class="dropdown-header py-0">Student</div>
-                    <a class="dropdown-item py-0" onclick="clickSubModule('')">Student Profile</a>
-                    <a class="dropdown-item py-0" onclick="clickSubModule('')">Sample2</a>
+                    <a class="dropdown-item py-0" onclick="clickSubModule('panel/stud_profile/studProfile_main.php')">Student Profile</a>
+                    <a class="dropdown-item py-0" onclick="clickSubModule('panel/stud_registry/studReg_main.php')">Student Registry</a>
                 </div>
                 <div>
                     <div class="dropdown-header py-0">Settings</div>
-                    <a class="dropdown-item py-0">Student Registry</a>
-                    <a class="dropdown-item py-0">Sample4</a>
+                    <a class="dropdown-item py-0">Sample 3</a>
+                    <a class="dropdown-item py-0">Sample 4</a>
                 </div>
             </div>
         </div>
     </li>
 </ul>
+<script>
+    function clickSubModule(filepath) {
+        $.post(filepath,
+        function(data) {
+            $('#maincontent').html(data)
+        });
+    }
+</script>

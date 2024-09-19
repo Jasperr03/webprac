@@ -66,9 +66,8 @@ require_once 'connection.php';
             </main>
         </div>
     </div>
-
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/global/global_script.js"></script>
 </body>
-
 </html>
