@@ -1,49 +1,32 @@
-<div class="row g-0 h-100">
-    <div class="col-md-2 col-sm-12 ps-0 pt-3 border-end ">
-        <div class="pe-2">
-            <h5>Notepad</h5>
-            <button type="button" class="btn btn-primary" onclick="loadmodal_input('','add')">
-                CREATE
-            </button>
-
+<div class="row h-100 bg-white">
+    <div class="col-2 ps-3 pt-3 border-end bg-grey">
+        <div class="d-flex flex-column flex-shrink-0 bg-white">
+            <p class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <span class="">Student Profile</span>
+            </p>
+            <hr>
+            <ul id="nav_studpf" class="nav nav-pills flex-column mb-auto pe-0 vh-100">
+                <li onclick="load_studProfile_submodule('studlist/studlist_main.php', this)" class="nav-item" id="listuddashboardmodule"><a class="studpfsubmodule nav-link link-dark active ">Student List</a></li>
+                <li onclick="load_studProfile_submodule('studgrade/studgrade_main.php', this)" class="nav-item"><a class="studpfsubmodule nav-link link-dark">Student Grade</a></li>
+                <li onclick="load_studProfile_submodule('studenroll/studenroll_main.php', this)" class="nav-item"><a class="studpfsubmodule nav-link link-dark">Enroll</a></li>
+            </ul>
         </div>
-        <div class="row g-0 mt-2">
-            <nav>
-                <div class="nav nav-tabs n" role="tablist">
-                    <button id="btnprfilter_new" title="New" class="ms-2 px-2 nav-link active" data-bs-toggle="tab" data-bs-target="#nav-prnew" type="button" role="tab" aria-controls="nav-prnew" aria-selected="true"><svg class="svg-inline--fa fa-file" aria-hidden="true" focusable="false" data-prefix="far" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
-                            <path fill="currentColor" d="M0 64C0 28.65 28.65 0 64 0H229.5C246.5 0 262.7 6.743 274.7 18.75L365.3 109.3C377.3 121.3 384 137.5 384 154.5V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM336 448V160H256C238.3 160 224 145.7 224 128V48H64C55.16 48 48 55.16 48 64V448C48 456.8 55.16 464 64 464H320C328.8 464 336 456.8 336 448z"></path>
-                        </svg><!-- <i class="fa-regular fa-file"></i> Font Awesome fontawesome.com --></button>
-                </div>
-            </nav>
-            <div class="col-12 pe-2 py-1">
-                <input id="inprsearchfilter" class="form-control form-control-sm me-1" placeholder="Search...">
-            </div>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="nav-prnew" role="tabpanel" aria-labelledby="nav-prnew-tab">
-                    <div class="table-responsive auto-scroll" style="height: 400px">
-                        <table id="tblprnewsumm" class="tblprfilter table table-sm table-hover">
-                            <!-- LOAD DATA HERE -->
-                        </table>
-                        <div style="height: 150px;"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-10 col-sm-12  bg-lgrey">
-        <div class="row g-0 h-100">
-            <div id="divpr_requesdetails" class="table-responsive px-0 auto-scroll">
-                <!-- LOAD DATA HERE -->
-            </div>
+        <div id="divstudpf_submodulecontent" class="col-xl-10 col-lg-10 px-3 auto-scroll">
+            <!-- CONTENT HERE-->
         </div>
     </div>
 </div>
+<script>
+    function load_studProfile_submodule(filename, elem){
+        $('#nav_studpf li a').removeClass('active')
+        $(elem).find('a').addClass('active')
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <!-- LOAD DATA HERE -->
-        </div>
-    </div>
-</div>
+        $.post("panel/stud_profile/components/" + filename, function (data) {
+            $('#divstudpf_submodulecontent').html(data);
+        }).fail(function() {
+            // If the request fails (e.g., 404 error), log it for debugging
+            console.error("Error loading " + filename);
+            alert("Error loading content. File not found.");
+        });
+    }
+</script>
